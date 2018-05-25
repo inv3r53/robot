@@ -1,3 +1,5 @@
 language: java
-sudo: false
+sudo: true
 script: mvn clean install
+before_install:
+  - chmod +x mvnw
